@@ -26,6 +26,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5170a91ea09030a4099195bfb7b38609, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &529668456326434673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7560751986279096084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bd9cc9ff509a0843aea6f1c4da06eae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chaseDistance: 5
 --- !u!1001 &1415125710897388094
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -97,6 +110,10 @@ PrefabInstance:
         type: 3}
       propertyPath: healthPoints
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1294697000, guid: 39a6224c3e6e1b442ad4385d07f0899a, type: 3}
+      propertyPath: m_Speed
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39a6224c3e6e1b442ad4385d07f0899a, type: 3}
