@@ -28,6 +28,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chaseDistance: 5
   suspicionTime: 5
+  patrolPath: {fileID: 0}
+  wayPointTolerance: 1
+  waypointDwellTime: 2
 --- !u!114 &8390815451018838459
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55,17 +58,17 @@ PrefabInstance:
     - target: {fileID: 5153614121402094482, guid: 39a6224c3e6e1b442ad4385d07f0899a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.386051
+      value: -1.2576447
       objectReference: {fileID: 0}
     - target: {fileID: 5153614121402094482, guid: 39a6224c3e6e1b442ad4385d07f0899a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 48.556343
       objectReference: {fileID: 0}
     - target: {fileID: 5153614121402094482, guid: 39a6224c3e6e1b442ad4385d07f0899a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.919983
+      value: -16.416847
       objectReference: {fileID: 0}
     - target: {fileID: 5153614121402094482, guid: 39a6224c3e6e1b442ad4385d07f0899a,
         type: 3}
@@ -110,7 +113,12 @@ PrefabInstance:
     - target: {fileID: 5768626548034883889, guid: 39a6224c3e6e1b442ad4385d07f0899a,
         type: 3}
       propertyPath: healthPoints
-      value: 20
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 7674398949446508182, guid: 39a6224c3e6e1b442ad4385d07f0899a,
+        type: 3}
+      propertyPath: weaponDamage
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1294697000, guid: 39a6224c3e6e1b442ad4385d07f0899a, type: 3}
       propertyPath: m_Speed
