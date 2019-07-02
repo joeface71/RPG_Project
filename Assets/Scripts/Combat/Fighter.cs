@@ -79,6 +79,7 @@ namespace RPG.Combat
         {
             StopAttack();
             target = null;
+            GetComponent<Mover>().Cancel(); // needed to stop movement as well--i.e cutscenes
         }
 
         private void StopAttack()
