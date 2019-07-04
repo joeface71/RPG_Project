@@ -7,9 +7,9 @@ using UnityEngine.AI;
 namespace RPG.Movement
 {
     public class Mover : MonoBehaviour, IAction
-    {
+    {        
         [SerializeField] Transform target;
-        [SerializeField] float maxSpeed = 6f;
+        [SerializeField] float maxSpeed = 6f;        
 
         NavMeshAgent navMeshAgent;
         Health health;
