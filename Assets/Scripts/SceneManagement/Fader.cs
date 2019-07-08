@@ -7,28 +7,34 @@ namespace RPG.SceneManagement
     {
         CanvasGroup canvasGroup;
 
-        private void Start() {
-            canvasGroup = GetComponent<CanvasGroup>();            
+        private void Awake() // Set up references in Awake
+        {
+            canvasGroup = GetComponent<CanvasGroup>();
         }
 
         public IEnumerator FadeOut(float time)
         {
-            while (canvasGroup.alpha < 1) 
+            while (canvasGroup.alpha < 1)
             {
                 canvasGroup.alpha += Time.deltaTime / time; // increment alpha per frame
                 yield return null; // resumes on next update
             }
-            
+
+        }
+
+        public void FadeOutImmediatley()
+        {
+            canvasGroup.alpha = 1;
         }
 
         public IEnumerator FadeIn(float time)
         {
-            while (canvasGroup.alpha > 0) 
+            while (canvasGroup.alpha > 0)
             {
                 canvasGroup.alpha -= Time.deltaTime / time; // increment alpha per frame
                 yield return null; // resumes on next update
             }
-            
+
         }
     }
 }
