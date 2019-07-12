@@ -1058,7 +1058,7 @@ MonoBehaviour:
   m_ZDamping: 1
   m_ScreenX: 0.5
   m_ScreenY: 0.7
-  m_CameraDistance: 15
+  m_CameraDistance: 10
   m_DeadZoneWidth: 0
   m_DeadZoneHeight: 0
   m_DeadZoneDepth: 0
@@ -2240,7 +2240,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1762275600}
-  m_LocalRotation: {x: 0.123046406, y: 0.7436446, z: -0.1426417, w: 0.6414871}
+  m_LocalRotation: {x: 0.12304642, y: 0.74364454, z: -0.14264168, w: 0.6414871}
   m_LocalPosition: {x: -23.64, y: 6.92, z: 23.65}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2774,12 +2774,12 @@ PrefabInstance:
     - target: {fileID: 1649247340787343327, guid: 34c1e5e7ad0ef1a42b47d7d2614781bb,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.6154945
+      value: 2.4103296
       objectReference: {fileID: 0}
     - target: {fileID: 1649247340787343327, guid: 34c1e5e7ad0ef1a42b47d7d2614781bb,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -14.720642
+      value: -9.813763
       objectReference: {fileID: 0}
     - target: {fileID: 1649247340787343327, guid: 34c1e5e7ad0ef1a42b47d7d2614781bb,
         type: 3}
@@ -2794,12 +2794,12 @@ PrefabInstance:
     - target: {fileID: 1649247340321509170, guid: 34c1e5e7ad0ef1a42b47d7d2614781bb,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.6154945
+      value: 2.4103296
       objectReference: {fileID: 0}
     - target: {fileID: 1649247340321509170, guid: 34c1e5e7ad0ef1a42b47d7d2614781bb,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -14.720642
+      value: -9.813763
       objectReference: {fileID: 0}
     - target: {fileID: 1649247340321509170, guid: 34c1e5e7ad0ef1a42b47d7d2614781bb,
         type: 3}
@@ -2816,6 +2816,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.x
       value: 39.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 1649247340096975660, guid: 34c1e5e7ad0ef1a42b47d7d2614781bb,
+        type: 3}
+      propertyPath: m_Height
+      value: 1.9608119
+      objectReference: {fileID: 0}
+    - target: {fileID: 1649247340096975660, guid: 34c1e5e7ad0ef1a42b47d7d2614781bb,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0.90715563
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3072427867281269587, guid: 34c1e5e7ad0ef1a42b47d7d2614781bb, type: 3}
