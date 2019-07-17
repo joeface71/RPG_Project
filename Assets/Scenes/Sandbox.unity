@@ -126,7 +126,6 @@ GameObject:
   - component: {fileID: 25102227}
   - component: {fileID: 25102226}
   - component: {fileID: 25102228}
-  - component: {fileID: 25102230}
   - component: {fileID: 25102229}
   m_Layer: 2
   m_Name: Intro Sequence
@@ -248,18 +247,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c930a1410e18c342960c81f586cd87e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &25102230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 25102222}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ee7873d99150294fa38a946a6725ac6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &68221300
 GameObject:
   m_ObjectHideFlags: 0
@@ -321,7 +308,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 68221300}
-  m_LocalRotation: {x: 0.32710552, y: -0.38047636, z: 0.14597172, w: 0.8526031}
+  m_LocalRotation: {x: 0.32710555, y: -0.38047642, z: 0.14597175, w: 0.8526031}
   m_LocalPosition: {x: 29.46, y: 8.66, z: -5.07}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2195,7 +2182,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1639371564}
-  m_LocalRotation: {x: 0.3544877, y: 0.008201995, z: -0.0031095666, w: 0.93501955}
+  m_LocalRotation: {x: 0.35448766, y: 0.008202023, z: -0.0031095769, w: 0.93501955}
   m_LocalPosition: {x: 23.18, y: 12.69, z: -25.28}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2240,7 +2227,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1762275600}
-  m_LocalRotation: {x: 0.12304642, y: 0.74364454, z: -0.14264168, w: 0.6414871}
+  m_LocalRotation: {x: 0.123046406, y: 0.7436446, z: -0.1426417, w: 0.6414871}
   m_LocalPosition: {x: -23.64, y: 6.92, z: 23.65}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2810,12 +2797,12 @@ PrefabInstance:
         type: 3}
       propertyPath: defaultWeapon
       value: 
-      objectReference: {fileID: 11400000, guid: a2a845692aa476040930f7eb04d543b2,
+      objectReference: {fileID: 11400000, guid: d71fed2e0703b564f8a14cf15fd0bd71,
         type: 2}
-    - target: {fileID: 2141418875484436754, guid: 34c1e5e7ad0ef1a42b47d7d2614781bb,
+    - target: {fileID: 3508999607019959318, guid: 34c1e5e7ad0ef1a42b47d7d2614781bb,
         type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 39.09
+      propertyPath: defaultWeaponName
+      value: Sword
       objectReference: {fileID: 0}
     - target: {fileID: 1649247340096975660, guid: 34c1e5e7ad0ef1a42b47d7d2614781bb,
         type: 3}
@@ -2826,6 +2813,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Center.y
       value: 0.90715563
+      objectReference: {fileID: 0}
+    - target: {fileID: 1649247340096975660, guid: 34c1e5e7ad0ef1a42b47d7d2614781bb,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2141418875484436754, guid: 34c1e5e7ad0ef1a42b47d7d2614781bb,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 39.09
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3072427867281269587, guid: 34c1e5e7ad0ef1a42b47d7d2614781bb, type: 3}

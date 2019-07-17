@@ -1369,7 +1369,7 @@ PrefabInstance:
     - target: {fileID: 1649247340787343327, guid: 34c1e5e7ad0ef1a42b47d7d2614781bb,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.036237717
+      value: -0.04624176
       objectReference: {fileID: 0}
     - target: {fileID: 1649247340787343327, guid: 34c1e5e7ad0ef1a42b47d7d2614781bb,
         type: 3}
@@ -1409,7 +1409,7 @@ PrefabInstance:
     - target: {fileID: 1649247340321509170, guid: 34c1e5e7ad0ef1a42b47d7d2614781bb,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.036237717
+      value: -0.04624176
       objectReference: {fileID: 0}
     - target: {fileID: 3508999607019959318, guid: 34c1e5e7ad0ef1a42b47d7d2614781bb,
         type: 3}
@@ -1417,6 +1417,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 22100000, guid: 9f7668f14123a74448579aa3a7be4000,
         type: 2}
+    - target: {fileID: 3508999607019959318, guid: 34c1e5e7ad0ef1a42b47d7d2614781bb,
+        type: 3}
+      propertyPath: defaultWeaponName
+      value: Unarmed
+      objectReference: {fileID: 0}
     - target: {fileID: 3072427867281269587, guid: 34c1e5e7ad0ef1a42b47d7d2614781bb,
         type: 3}
       propertyPath: m_CameraDistance
