@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using RPG.Combat;
-using RPG.Core;
+﻿using RPG.Combat;
 using RPG.Movement;
+using RPG.Resources;
 using UnityEngine;
 
 

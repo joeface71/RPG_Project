@@ -67,6 +67,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0.10700001
       objectReference: {fileID: 0}
+    - target: {fileID: 8728952964144448680, guid: 6b13daacec2b4ef44a926da32270a18a,
+        type: 3}
+      propertyPath: defaultWeapon
+      value: 
+      objectReference: {fileID: 11400000, guid: a2a845692aa476040930f7eb04d543b2,
+        type: 2}
     - target: {fileID: 529668456326434673, guid: 6b13daacec2b4ef44a926da32270a18a,
         type: 3}
       propertyPath: chaseDistance
@@ -77,11 +83,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: bfbe2e8b331e2cc42be1591f949c0e41, type: 2}
-    - target: {fileID: 8728952964144448680, guid: 6b13daacec2b4ef44a926da32270a18a,
+    - target: {fileID: 7982299403902387586, guid: 6b13daacec2b4ef44a926da32270a18a,
         type: 3}
-      propertyPath: defaultWeapon
-      value: 
-      objectReference: {fileID: 11400000, guid: a2a845692aa476040930f7eb04d543b2,
-        type: 2}
+      propertyPath: characterClass
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b13daacec2b4ef44a926da32270a18a, type: 3}

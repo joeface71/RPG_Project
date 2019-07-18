@@ -1369,7 +1369,7 @@ PrefabInstance:
     - target: {fileID: 1649247340787343327, guid: 34c1e5e7ad0ef1a42b47d7d2614781bb,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.04624176
+      value: -0.038627625
       objectReference: {fileID: 0}
     - target: {fileID: 1649247340787343327, guid: 34c1e5e7ad0ef1a42b47d7d2614781bb,
         type: 3}
@@ -1409,7 +1409,7 @@ PrefabInstance:
     - target: {fileID: 1649247340321509170, guid: 34c1e5e7ad0ef1a42b47d7d2614781bb,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.04624176
+      value: -0.038627625
       objectReference: {fileID: 0}
     - target: {fileID: 3508999607019959318, guid: 34c1e5e7ad0ef1a42b47d7d2614781bb,
         type: 3}
@@ -1436,6 +1436,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsTrigger
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9162879538179548123, guid: 34c1e5e7ad0ef1a42b47d7d2614781bb,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 861445870645011270, guid: 34c1e5e7ad0ef1a42b47d7d2614781bb,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 2.0999756
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 417613261, guid: 34c1e5e7ad0ef1a42b47d7d2614781bb, type: 3}
@@ -2337,6 +2347,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d66c89601ce96d4419ce36a4dce3c401, type: 3}
+--- !u!1 &1938832115 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7673883050728930216, guid: 34c1e5e7ad0ef1a42b47d7d2614781bb,
+    type: 3}
+  m_PrefabInstance: {fileID: 1163844603}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1938832119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1938832115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6651191df140574429ab4161a6f989a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1960176371 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 452602, guid: 8b17dbd29b0c2474d958f6a2aa5d3aa2,
