@@ -17,7 +17,7 @@ namespace RPG.Combat
         float timeSinceLastAttack = Mathf.Infinity;
         Weapon currentWeapon = null;
 
-        private void Start()
+        private void Awake() // change to awake if getting null reference for currentWeapon.name
         {
             if (currentWeapon == null)
             {

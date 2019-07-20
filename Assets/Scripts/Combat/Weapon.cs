@@ -1,5 +1,5 @@
-﻿using RPG.Resources;
-using UnityEngine;
+﻿using UnityEngine;
+using RPG.Resources;
 
 namespace RPG.Combat
 {
@@ -8,8 +8,8 @@ namespace RPG.Combat
     {
         [SerializeField] AnimatorOverrideController animatorOverride = null;
         [SerializeField] GameObject equippedPrefab = null;
-        [SerializeField] float weaponRange = 2f;
         [SerializeField] float weaponDamage = 5f;
+        [SerializeField] float weaponRange = 2f;
         [SerializeField] bool isRightHanded = true;
         [SerializeField] Projectile projectile = null;
 
@@ -27,12 +27,10 @@ namespace RPG.Combat
             }
 
             var overrideController = animator.runtimeAnimatorController as AnimatorOverrideController;
-
             if (animatorOverride != null)
             {
                 animator.runtimeAnimatorController = animatorOverride;
             }
-
             else if (overrideController != null)
             {
                 animator.runtimeAnimatorController = overrideController.runtimeAnimatorController;
@@ -48,7 +46,7 @@ namespace RPG.Combat
             }
             if (oldWeapon == null) return;
 
-            oldWeapon.name = "DESTROYING"; //avoids new weapon being destroyed
+            oldWeapon.name = "DESTROYING";
             Destroy(oldWeapon.gameObject);
         }
 

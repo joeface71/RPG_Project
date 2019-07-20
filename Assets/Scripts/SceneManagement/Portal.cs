@@ -17,7 +17,7 @@ namespace RPG.SceneManagement
         [SerializeField] int sceneToLoad = -1;
         [SerializeField] Transform spawnPoint;
         [SerializeField] DestinationIdentifier destination;
-        [SerializeField] float fadeOutTime = 2f;
+        [SerializeField] float fadeOutTime = 1f;
         [SerializeField] float fadeInTime = 2f;
         [SerializeField] float fadeWaitTime = 0.5f;
 
@@ -42,7 +42,6 @@ namespace RPG.SceneManagement
             Fader fader = FindObjectOfType<Fader>();
             SavingWrapper savingWrapper = FindObjectOfType<SavingWrapper>();
 
-
             yield return fader.FadeOut(fadeOutTime);
 
             savingWrapper.Save();
@@ -57,7 +56,6 @@ namespace RPG.SceneManagement
             savingWrapper.Save();
 
             yield return new WaitForSeconds(fadeWaitTime);
-
             yield return fader.FadeIn(fadeInTime);
 
             Destroy(gameObject);
