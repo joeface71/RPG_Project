@@ -1422,16 +1422,6 @@ PrefabInstance:
       propertyPath: defaultWeaponName
       value: Unarmed
       objectReference: {fileID: 0}
-    - target: {fileID: 3072427867281269587, guid: 34c1e5e7ad0ef1a42b47d7d2614781bb,
-        type: 3}
-      propertyPath: m_CameraDistance
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3072427867281269587, guid: 34c1e5e7ad0ef1a42b47d7d2614781bb,
-        type: 3}
-      propertyPath: m_ScreenY
-      value: 0.7
-      objectReference: {fileID: 0}
     - target: {fileID: 1649247340096975660, guid: 34c1e5e7ad0ef1a42b47d7d2614781bb,
         type: 3}
       propertyPath: m_IsTrigger
@@ -1442,15 +1432,25 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 861445870645011270, guid: 34c1e5e7ad0ef1a42b47d7d2614781bb,
+    - target: {fileID: 3072427867281269587, guid: 34c1e5e7ad0ef1a42b47d7d2614781bb,
         type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 2.0999756
+      propertyPath: m_CameraDistance
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3072427867281269587, guid: 34c1e5e7ad0ef1a42b47d7d2614781bb,
+        type: 3}
+      propertyPath: m_ScreenY
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 2834967518365267260, guid: 34c1e5e7ad0ef1a42b47d7d2614781bb,
         type: 3}
       propertyPath: startingLevel
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 861445870645011270, guid: 34c1e5e7ad0ef1a42b47d7d2614781bb,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 2.0999756
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 417613261, guid: 34c1e5e7ad0ef1a42b47d7d2614781bb, type: 3}

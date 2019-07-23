@@ -1,15 +1,21 @@
 using RPG.Saving;
 using UnityEngine;
+using System;
 
 namespace RPG.Stats
 {
     public class Experience : MonoBehaviour, ISaveable
     {
         [SerializeField] float experiencePoints = 0;
+
+        //public delegate void ExperienceGainedDelegate();
+
+        public event Action onExperienceGained; //Action is a void delegate with no arguments
         
         public void GainExperience(float experience)
         {
             experiencePoints += experience;
+            onExperienceGained();
         }
 
         public float GetPoints()

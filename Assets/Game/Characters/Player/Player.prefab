@@ -14,18 +14,6 @@ CapsuleCollider:
   m_Height: 1.9994316
   m_Direction: 1
   m_Center: {x: 0, y: 0.8840809, z: 0}
---- !u!114 &7363063753872702844
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4008030619692819475}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58df56e189dd2bd49825c96ac2e732fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &5708940432195113728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39,6 +27,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   experiencePoints: 0
+--- !u!114 &7363063753872702844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4008030619692819475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58df56e189dd2bd49825c96ac2e732fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1262132835569402625
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -199,6 +199,12 @@ PrefabInstance:
       propertyPath: startingLevel
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 9035727535939624892, guid: 39a6224c3e6e1b442ad4385d07f0899a,
+        type: 3}
+      propertyPath: levelUpParticleEffect
+      value: 
+      objectReference: {fileID: 7118592605621905940, guid: e8989b2903421ca4abe0b585ccdd56e9,
+        type: 3}
     - target: {fileID: 7674398949446508182, guid: 39a6224c3e6e1b442ad4385d07f0899a,
         type: 3}
       propertyPath: weaponRange
