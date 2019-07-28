@@ -3,6 +3,7 @@ using RPG.Combat;
 using RPG.Movement;
 using RPG.Resources;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 
 namespace RPG.Control
@@ -11,13 +12,7 @@ namespace RPG.Control
     {
         Health health;
 
-        enum CursorType
-        {
-            None,
-            Movement,
-            Combat
-        }
-
+        
         [System.Serializable]
         struct CursorMapping
         {
@@ -35,33 +30,60 @@ namespace RPG.Control
 
         void Update()
         {
-            if (health.IsDead()) return;
-            if (InteractWithCombat()) return;
+            if (InteractWithUI()) return;
+            if (health.IsDead())
+            {
+                SetCursor(CursorType.None);
+                return;
+            }
+            if (interactWithComponent()) return;
+            
             if (InteractWithMovement()) return;
 
             SetCursor(CursorType.None);
         }
 
-        private bool InteractWithCombat()
+        private bool InteractWithUI()
         {
-            RaycastHit[] hits = Physics.RaycastAll(GetMouseRay());
-            foreach (RaycastHit hit in hits)
+
+            if (EventSystem.current.IsPointerOverGameObject()) 
             {
-
-                CombatTarget target = hit.transform.GetComponent<CombatTarget>();
-                if (target == null) continue;
-
-                if (!GetComponent<Fighter>().CanAttack(target.gameObject)) continue;
-
-                if (Input.GetMouseButton(0))
-                {
-                    GetComponent<Fighter>().Attack(target.gameObject);
-                }
-                SetCursor(CursorType.Combat);
+                SetCursor(CursorType.UI);
                 return true;
             }
             return false;
         }
+
+        private bool interactWithComponent()
+        {
+            RaycastHit[] hits = Physics.RaycastAll(GetMouseRay());
+            foreach (RaycastHit hit in hits)
+            {
+                IRaycastable[] raycastables = hit.transform.GetComponents<IRaycastable>();
+                foreach (IRaycastable raycastable in raycastables)
+                {
+                    if (raycastable.HandleRaycast(this))
+                    {
+                        SetCursor(raycastable.GetCursorType());
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+
+        RaycastHit[] RaycastAllSorted()
+        {
+            RaycastHit[] hits = Physics.RaycastAll(GetMouseRay());
+            float[] distances = new float[hits.Length];
+            for (int i = 0; i < hits.Length; i++)
+            {
+                distances[i] = hits[i].distance;
+            }
+            Array.Sort(distances, hits);
+            return hits;
+        }
+
 
         private bool InteractWithMovement()
         {
